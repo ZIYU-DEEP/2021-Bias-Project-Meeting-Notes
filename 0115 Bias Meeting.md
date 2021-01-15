@@ -53,6 +53,7 @@ Self-supervised models use **synthetic anomalies** (like **adversarial examples*
 The synthetic anomalies may help form a **more compact representation for normal data**, but may also potentially mislead the model to focus on **certain features irrelevant** to detect real-world anomalies. It would be interested to study whether those adversarial examples hurt generalizability of anomaly detection models or not.
 
 Relevant papers include  [Tack et al. 2020](https://github.com/alinlab/CSI); [Bergman & Hoshen 2020](https://openreview.net/forum?id=H1lK_lBtvS); [Zaheer et al. 2020](https://openaccess.thecvf.com/content_CVPR_2020/papers/Zaheer_Old_Is_Gold_Redefining_the_Adversarially_Learned_One-Class_Classifier_Training_CVPR_2020_paper.pdf); [Choi & Chung 2020](https://openreview.net/forum?id=ByeNra4FDB); [Hendrycks et al. 2019b](https://papers.nips.cc/paper/2019/hash/a2b15837edac15df90721968986f7f8e-Abstract.html); [Golan & El-Yaniv 2018](https://papers.nips.cc/paper/8183-deep-anomaly-detection-using-geometric-transformations.pdf). Most of them are based on a classifier though, which is different from our baseline.
+<br>
 
 ### 2.3. Bias Understanding [to add *surprisal*]
 #### 2.3.1. Open Set Domain Adaptation Framework
@@ -75,7 +76,7 @@ TBD.
 
 ### 3.1. ICML Papers 
 [ICML-Paper-List-of-Anomaly-Detection](https://github.com/ZIYU-DEEP/ICML-Paper-List-of-Anomaly-Detection)  
-Usually a problem, then a model to solve the problem. Only one paper is purely theoretical – [Open Category Detection with PAC Guarantee](https://arxiv.org/pdf/1808.00529.pdf). It may worth to re-phrase the paper like a follow-up of this one, given that we do not have a model.
+Usually a problem, then a model to solve the problem. Only one paper is purely theoretical – [Open Category Detection with PAC Guarantee](https://arxiv.org/pdf/1808.00529.pdf). It may worth to re-phrase the paper like a follow-up of this one, given that we do not have a model; but we must ensure we provide enough new information in addition to this one.
 
 ### 3.2. IJCAI Papers 
 [IJCAI-Paper-List-of-Anomaly-Detection](https://github.com/ZIYU-DEEP/IJCAI-Paper-List-of-Anomaly-Detection)  
