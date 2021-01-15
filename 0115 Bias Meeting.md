@@ -40,7 +40,7 @@ Surprise should mostly come from the application side, then from the methodology
 - *Perfect Density Models Cannot Guarantee Anomaly Detection*
 - *Rethinking ...*
 - *"It Doesn’t Get Better and Here’s Why": ...*
-<br>
+
 
 ### 2.2. Additional Experiments
 #### 2.2.1. Datasets with Real-World Applications [to reinforce *issue importance*]
@@ -71,7 +71,7 @@ Relevant papers include  [Tack et al. 2020](https://github.com/alinlab/CSI); [Be
 - If the normal latent space's entropy is not regularized, then there will be bias.
 - If the estimate for abnormal distribution is incorrect, then there will be bias.
 
-<br>
+
 
 ### 2.4. Other Future Directions Beyond Reviewers' Suggestions
 - Let's jump out and accept the **bias is a known effect and not surprising**, and there exists **an obvious easy strategy** which is to use ensembles with unsupervised model to train, what would be the next?
