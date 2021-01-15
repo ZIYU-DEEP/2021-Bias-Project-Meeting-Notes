@@ -67,9 +67,9 @@ Relevant papers include  [Tack et al. 2020](https://github.com/alinlab/CSI); [Be
 #### 2.3.2. Information-Theoretical Framework 
 - [Sketch on Information Models](https://github.com/ZIYU-DEEP/2021-Bias-Project-Meeting-Notes/blob/master/Files/Sketch%20on%20Information%20Model.pdf).
 - The performance for anomaly detection model is affected by **mutual information** between input and latent space, **entropy** of the normal latent space, and **cross-entropy** between the normal and abnormal distribution.
-- If the mutual information is not regularized, then there will be bias.
-- If the normal latent space's entropy is not regularized, then there will be bias.
-- If the estimate for abnormal distribution is incorrect, then there will be bias.
+- If the mutual information is not regularized, there will be bias.
+- If the normal latent space's entropy is not regularized, there will be bias.
+- If the estimate for abnormal distribution is incorrect, there will be bias.
 
 
 
