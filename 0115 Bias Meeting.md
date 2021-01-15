@@ -6,6 +6,7 @@
 <br>
 
 > 😡: Using the labeled anomaly data to train and validate the trained model of course results in some sort of inductive bias. This is a **fundamental assumption in supervised learning like classification.** In anomaly detection, such bias is often desired in the sense that we want our detectors to identify anomalies similar to those labeled anomaly data. By contrast, there can be novel types of anomalies that can be very different from the known anomalies. Those novel anomalies cannot be detected if fitting only to the known anomalies. Therefore, **this conclusion is straightforward.**
+
 <br>
 
 ## 2. Potential Directions for Paper Fix
@@ -64,12 +65,18 @@ Relevant papers include  [Tack et al. 2020](https://github.com/alinlab/CSI); [Be
 
 
 #### 2.3.2. Information-Theoretical Framework 
-TBD.
+- [Sketch on Information Models](https://github.com/ZIYU-DEEP/2021-Bias-Project-Meeting-Notes/blob/master/Files/Sketch%20on%20Information%20Model.pdf).
+- The performance for anomaly detection model is affected by **mutual information** between input and latent space, **entropy** of the normal latent space, and **cross-entropy** between the normal and abnormal distribution.
+- If the mutual information is not regularized, then there will be bias.
+- If the normal latent space's entropy is not regularized, then there will be bias.
+- If the estimate for abnormal distribution is incorrect, then there will be bias.
+
 <br>
 
 ### 2.4. Other Future Directions Beyond Reviewers' Suggestions
 - Let's jump out and accept the **bias is a known effect and not surprising**, and there exists **an obvious easy strategy** which is to use ensembles with unsupervised model to train, what would be the next?
 - Can we design a model which guarantees better performance & lower complexity than ensemble with unsupervised models? That is, a Framework for which **additional labeled dataset will always be valuable**. This is more naturally aligned with human intelligence. (I have a name for it already :) – Almost Harmless Supervised Anomaly Detection.)
+
 <br>
 
 ## 3. Flavor of Anomaly Detection Papers in AI Conferences
