@@ -21,14 +21,14 @@ Surprise should mostly come from the application side, then from the methodology
 
 **Methodology side**: *The **negative effect of supervision** is **unique to anomaly detection**.*
 
-| Classification Type | Known Label Set | Known Target Distribution |
-| :---:        |    :----:   |          :---: |
-| Imbalanced Sampling | :heavy_check_mark: | :heavy_multiplication_x:| 
-| Domain Adaptation | :heavy_check_mark: | :heavy_check_mark: |
-|Open Set Domain Adaptation| :heavy_multiplication_x: | :heavy_check_mark: |
-| Anomaly Detection | :heavy_multiplication_x: | :heavy_multiplication_x: |
+| Classification Type | Known Label Set | Distribution Shift from Source to Target | Known Target Distribution |
+| :---:        |    :----:   | :---:   |      :---: |
+| Imbalanced Sampling | :heavy_check_mark:| :heavy_multiplication_x: | :heavy_check_mark:| 
+| Close Set Domain Adaptation | :heavy_check_mark:| :heavy_check_mark: | :heavy_check_mark: |
+|Open Set Domain Adaptation| :heavy_multiplication_x: | :heavy_check_mark: | :heavy_check_mark: |
+| Anomaly Detection | :heavy_multiplication_x: | :heavy_check_mark: | :heavy_multiplication_x: |
 
-- In anomaly detection, we do not have full information of the **label set** (assuming each sub-type of anomalies have a different label), nor do we have a representative sample set of the **test distribution**.
+- In anomaly detection, we do not have full information of the **label set** (assuming each sub-type of anomalies have a different label), nor do we have a representative sample set of the **target distribution**.
 - This poses a unique challenge to anomaly detection, that we could only use **much limited information to infer bias and debias**, compared to existing classification scenarios.
 - To make this part stronger, we need additional theoretical / intuitive analysis texts on the understanding of bias.
 
@@ -49,7 +49,7 @@ Additional datasets can include [Retinal OCT dataset](https://www.kaggle.com/pau
 However, it is hard to find a real-world application that we have to **only use a biased subset** of anomalies to train, like the spectrum misuse detection. This makes our findings less useful in practice.
 
 #### 2.2.2. Additional Self-Supervised Models [to alleviate *repeatition*] [to tackle *straightforward conclusion*]
-Self-supervised models use **synthetic anomalies** (like **adversarial examples**) generated from normal data to train. 
+Self-supervised models use **synthetic anomalies** generated from normal data to train. 
 
 The synthetic anomalies may help form a **more compact representation for normal data**, but may also potentially mislead the model to focus on **certain features irrelevant** to detect real-world anomalies. It would be interested to study whether those adversarial examples hurt generalizability of anomaly detection models or not.
 
